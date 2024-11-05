@@ -1,0 +1,44 @@
+{
+    "name": "otolorinrufus/smart-payment-router",
+    "description": "A smart routing Laravel package for payment processing",
+    "type": "library",
+    "require": {
+        "laravel/framework": "^11.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^11.4",
+        "orchestra/testbench": "^9.5"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Otolorinrufus\\SmartPaymentRouter\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Otolorinrufus\\SmartPaymentRouter\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Otolorinrufus\\SmartPaymentRouter\\SmartPaymentRouterServiceProvider"
+            ],
+            "aliases": {
+                "SmartPayment": "Otolorinrufus\\SmartPaymentRouter\\Facades\\SmartPayment"
+            }
+        }
+    },
+    "authors": [
+        {
+            "name": "Otolorin Rufus",
+            "email": "otolorinrufus64@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "scripts": {
+        "test": "phpunit"
+    }
+}
